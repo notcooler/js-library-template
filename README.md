@@ -15,7 +15,7 @@ To Obfuscate: `bun obfuscate`
 
 To Build and Obfuscate: `bun prepublishOnly`
 
-To Publish: `bun publish` *(Runs `bun prepublishOnly`)*
+To Publish: `bun publish` *(Runs `bun prepublishOnly` before publishing)*
 
 ## Guide
 
