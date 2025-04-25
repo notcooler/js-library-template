@@ -28,7 +28,6 @@ for (const i in PATHS) {
   const newFiles = await readdir(PATHS[i]!, { recursive: true })
   files = files.concat(newFiles.map((f) => path.join(PATHS[i]!, f)))
 }
-console.log(files)
 
 // Only obfuscate the javascript files
 files = files.filter((f) => f.endsWith(".cjs") || f.endsWith(".mjs"))
