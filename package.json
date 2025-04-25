@@ -1,0 +1,24 @@
+{
+  "name": "js-library-template",
+  "description": "This is a template",
+  "version": "0.0.1",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "import": "./dist/index.mjs",
+    "require": "./dist/index.cjs",
+    "types": "./dist/index.d.ts"
+  },
+  "scripts": {
+    "dev": "bun run --watch src/index.ts",
+    "build": "bun run bunup",
+    "build-watch": "bun run bunup --watch",
+    "obfuscate": "bun run obfustucator.ts",
+    "prepublishOnly": "bun run build && bun run obfuscate"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "bunup": "^0.4.72",
+    "javascript-obfuscator": "^4.1.1",
+    "typescript": "^5"
+  }
+}
